@@ -4,13 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Radu's code</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts - Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Custom Tailwind Config -->
     <script>
         tailwind.config = {
             theme: {
@@ -27,7 +24,6 @@
         }
     </script>
     <style>
-        /* Simple smooth scroll */
         html {
             scroll-behavior: smooth;
         }
@@ -35,10 +31,9 @@
 </head>
 <body class="bg-white text-secondary-700 font-sans antialiased">
 
-    <!-- Header / Navigation -->
     <header class="bg-white/90 backdrop-blur-sm sticky top-0 z-50 border-b border-secondary-200">
         <nav class="container mx-auto max-w-6xl px-6 py-4 flex justify-between items-center">
-            <!-- top title -->
+			
             <a href="#" class="text-xl font-bold text-secondary-900 hover:text-primary-600 transition-colors">
                 Welcome!
             </a>
@@ -52,9 +47,9 @@
 
     <main class="container mx-auto max-w-6xl px-6 py-12 sm:py-20">
 
-        <!-- Hero Section -->
+        
         <section class="flex flex-col-reverse md:flex-row items-center gap-12 mb-20 sm:mb-32">
-            <!-- Left Column (Text & Links) -->
+            
             <div class="md:w-3/5 text-center md:text-left">
                 <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-secondary-900 leading-tight mb-4">
               
@@ -67,7 +62,7 @@
                    
                     I'm a second-year student passionate about everything related to the Computer Science domain. Welcome to my portfolio.
                 </p>
-                <!-- Social Links -->
+                
                 <div class="flex justify-center md:justify-start space-x-5">
                     <a href="https://github.com/RaduPescarul?tab=repositories/" target="_blank" rel="noopener noreferrer" title="GitHub"
                        class="text-secondary-400 hover:text-primary-600 transition-colors">
@@ -89,7 +84,7 @@
                     </a>
                 </div>
             </div>
-            <!-- Right Column (Image) -->
+            
             <div class="md:w-2/5 flex justify-center">
                 <img src="pozaCuMine1pe1.jpeg" 
                      alt="A placeholder image of you"
@@ -97,16 +92,16 @@
             </div>
         </section>
 
-        <!-- About Me & Skills -->
+        
         <section id="about" class="mb-20 sm:mb-32 scroll-mt-20">
             <h2 class="text-3xl sm:text-4xl font-bold text-secondary-900 text-center mb-12">
                 About Me
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-5 gap-10">
-                <!-- About Me Text -->
+                
                 <div class="md:col-span-3 bg-secondary-50 p-6 sm:p-8 rounded-lg shadow-sm border border-secondary-200">
                     <h3 class="text-2xl font-semibold text-secondary-900 mb-4">Who I Am</h3>
-                    <!-- "about me" text -->
+                    
                     <p class="text-secondary-600 leading-relaxed mb-4">
                         Hello! I'm a second-year Computer Science student at the Technical University of Cluj-Napoca. I'm driven by a deep curiosity for how technology works and a passion for creating software that solves real-world problems.
                     </p>
@@ -114,11 +109,11 @@
                         My coursework in Data Structures, Algorithms, and Object-Oriented Programming has given me a strong theoretical foundation, which I'm always eager to apply to practical projects.
                     </p>
                 </div>
-                <!-- Skills -->
+            
                 <div class="md:col-span-2 bg-secondary-50 p-6 sm:p-8 rounded-lg shadow-sm border border-secondary-200">
                     <h3 class="text-2xl font-semibold text-secondary-900 mb-4">My Skills</h3>
                     <div class="flex flex-wrap gap-3">
-                        <!-- Add/remove skills -->
+                        
                         <span class="bg-primary-100 text-primary-800 text-sm font-medium px-3 py-1.5 rounded-full">Java</span>
                         <span class="bg-primary-100 text-primary-800 text-sm font-medium px-3 py-1.5 rounded-full">C++</span>
                         <span class="bg-primary-100 text-primary-800 text-sm font-medium px-3 py-1.5 rounded-full">C#(.NET framework)</span>
@@ -133,65 +128,57 @@
             </div>
         </section>
 
-        <!-- Projects Section -->
+        
         <section id="projects" class="mb-20 sm:mb-32 scroll-mt-20">
             <h2 class="text-3xl sm:text-4xl font-bold text-secondary-900 text-center mb-12">
                 My Projects
             </h2>
             
-            <!-- Project Grid -->
-            <!-- 
-                TO ADD A NEW PROJECT:
-                Copy and paste one of the entire `<div class="bg-secondary-800 ...">...</div>` blocks.
-                Then, edit the text and links inside it.
-            -->
+            
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <!-- === PROJECT 1 === (This is your template to copy) -->
+                <!--PROJECT 1-->
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden flex flex-col border border-secondary-200">
                     <img src="WashingMachine.jpg" 
                          alt="Placeholder image for Project 1" 
                          class="w-full h-48 object-cover">
                     <div class="p-6 flex flex-col flex-grow">
-                        <!-- project -->
+                        
                         <h3 class="text-xl font-semibold text-secondary-900 mb-2">Washing machine in VHDL</h3>
                         <p class="text-secondary-600 leading-relaxed mb-4 flex-grow">
                             This project contains a simple yet accurate representation of implementing the code necesary for a washing machine to work. It was tested on naxys-7 FPGA. 
                         </p>
-                        <!-- Project tags -->
+                        
                         <div class="flex flex-wrap gap-2 mb-6">
                             <span class="bg-secondary-100 text-secondary-700 text-xs font-medium px-2.5 py-1 rounded-full">VHDL</span>
                         </div>
-                        <!-- EDIT THIS: Project links -->
+                        
                         <div class="flex space-x-4">
                             <a href="#" class="text-primary-600 hover:text-primary-700 font-medium transition-colors">
                                 View on GitHub &rarr;
                             </a>
-                            <!-- <a href="#" class="text-primary-600 hover:text-primary-700 font-medium transition-colors">
-                                Live Demo &rarr;
-                            </a> -->
+                            
                         </div>
                     </div>
                 </div>
-                <!-- === END PROJECT 1 === -->
-
-                <!-- === PROJECT 2 === -->
+                
+                <!--PROJECT 2-->
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden flex flex-col border border-secondary-200">
                     <img src="zombie.png" 
                          alt="Placeholder image for Project 2" 
                          class="w-full h-48 object-cover">
                     <div class="p-6 flex flex-col flex-grow">
-                        <!-- project 2 -->
+                        
                         <h3 class="text-xl font-semibold text-secondary-900 mb-2">Proiect-atestat-informatica</h3>
                         <p class="text-secondary-600 leading-relaxed mb-4 flex-grow">
                             This is another project. This is a simple top-down 2D shooter i made in 12th grade with zombies. I used the .NET framework and a database for the login interface.
                         </p>
-                        <!-- Project tags -->
+                        
                         <div class="flex flex-wrap gap-2 mb-6">
                             <span class="bg-secondary-100 text-secondary-700 text-xs font-medium px-2.5 py-1 rounded-full">.NET</span>
                             <span class="bg-secondary-100 text-secondary-700 text-xs font-medium px-2.5 py-1 rounded-full">SQL</span>
                         </div>
-                        <!-- Project links -->
+                        
                         <div class="flex space-x-4">
                             <a href="#" class="text-primary-600 hover:text-primary-700 font-medium transition-colors">
                                 View on GitHub &rarr;
@@ -199,25 +186,24 @@
                         </div>
                     </div>
                 </div>
-                <!-- === END PROJECT 2 === -->
                 
-                <!-- === PROJECT 3 (Placeholder) === -->
+                <!--PROJECT 3-->
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden flex flex-col border border-secondary-200">
                     <img src="question.jpg" 
                          alt="Placeholder image for Project 3" 
                          class="w-full h-48 object-cover">
                     <div class="p-6 flex flex-col flex-grow">
-                        <!-- project -->
+                        
                         <h3 class="text-xl font-semibold text-secondary-900 mb-2">???</h3>
                         <p class="text-secondary-600 leading-relaxed mb-4 flex-grow">
                             Coming soon...
                         </p>
-                        <!-- Project tags -->
+                        
                         <div class="flex flex-wrap gap-2 mb-6">
                             <span class="bg-secondary-100 text-secondary-700 text-xs font-medium px-2.5 py-1 rounded-full"></span>
                             <span class="bg-secondary-100 text-secondary-700 text-xs font-medium px-2.5 py-1 rounded-full"></span>
                         </div>
-                        <!-- Project links -->
+                        
                         <div class="flex space-x-4">
                             <a href="#" class="text-primary-600 hover:text-primary-700 font-medium transition-colors">
                                 View on GitHub &rarr;
@@ -225,12 +211,10 @@
 						</div>
                     </div>
                 </div>
-                <!-- === END PROJECT 3 === -->
 
             </div>
         </section>
         
-        <!-- Contact Section -->
         <section id="contact" class="text-center scroll-mt-20">
             <h2 class="text-3xl sm:text-4xl font-bold text-secondary-900 text-center mb-6">
                 Get In Touch
@@ -246,18 +230,16 @@
 
     </main>
 
-    <!-- Footer -->
     <footer class="bg-secondary-50 border-t border-secondary-200 mt-20 sm:mt-32">
         <div class="container mx-auto max-w-6xl px-6 py-6 text-center text-secondary-500 text-sm">
-            <!-- trademark -->
             &copy; <span id="current-year"></span> Petringel Radu-Stefan. All rights reserved.
         </div>
     </footer>
 
     <script>
-        // Set current year in footer
         document.getElementById('current-year').textContent = new Date().getFullYear();
     </js</script>
 </body>
 </html>
+
 
